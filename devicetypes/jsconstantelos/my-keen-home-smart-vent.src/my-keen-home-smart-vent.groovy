@@ -3,7 +3,7 @@
 // SmartThings Device Handler v1.0.0
 
 metadata {
-    definition (name: "My Keen Home Smart Vent", namespace: "jsconstantelos", author: "Keen Home") {
+    definition (name: "My Keen Home Smart Vent", namespace: "jsconstantelos", author: "Keen Home", mnmn: "SmartThingsCommunity", vid: "10327bad-e926-30bd-8611-063f07763a97") {
         capability "Switch Level"
         capability "Switch"
         capability "Configuration"
@@ -315,7 +315,7 @@ private def makeLevelCommand(level) {
     def rangeMax = 254
     def scaledLevel = Math.round(level * rangeMax / 100)
     log.debug "scaled level for ${level}%: ${scaledLevel}"
-	sendEvent(name: "level", value: level, displayed: true)
+//	sendEvent(name: "level", value: level, displayed: true)
     // convert to hex string and pad to two digits
     def hexLevel = new BigInteger(scaledLevel.toString()).toString(16).padLeft(2, '0')
 

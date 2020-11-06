@@ -10,19 +10,12 @@
  *  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License
  *  for the specific language governing permissions and limitations under the License.
  *
- *  Aeon Home Energy Meter
- *
- *  Author: SmartThings
- *
- *  Date: 2013-05-30
- *
  *	Updates:
  *	-------
- *	07-09-2019 : Initial commit.
- *  05-20-2020 : Cleanup and added user configuration parameters.
+ *	08-07-2020 : Initial commit.
  */
 metadata {
-	definition (name: "My Aeon Home Energy Meter", namespace: "jsconstantelos", author: "jsconstantelos", mnmn: "SmartThingsCommunity", vid: "373af1eb-cdc4-3246-b99a-1bba01547b68") {
+	definition (name: "My Aeon Gen 1 Home Energy Meter", namespace: "jsconstantelos", author: "jsconstantelos", mnmn: "SmartThingsCommunity", vid: "373af1eb-cdc4-3246-b99a-1bba01547b68") {
 		capability "Power Meter"
 		capability "Energy Meter"
 		capability "Configuration"
